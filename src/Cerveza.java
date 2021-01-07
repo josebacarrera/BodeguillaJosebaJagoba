@@ -44,5 +44,14 @@ public class Cerveza extends Articulo {
 		Alcohol = alcohol;
 	}
 	
-	
+
+	//METODOS
+	/*
+	void VerCaracteristicas ()
+	boolean Saludable ()
+	// have origin belgium
+	void BebidaMuyAlcoholica()
+	//If  the alcohol is higher than 6, raise the price 5%
+
+	*/
 }

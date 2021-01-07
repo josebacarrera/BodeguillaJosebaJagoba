@@ -11,10 +11,10 @@ public class Main {
 
 			
 			// crear una lista 
-			ListaArticulos bodeguilla = new ListaArticulos();
+			ListaArticulos articulo = new ListaArticulos();
 			
 			
-			bodeguilla.fill_data();
+			articulo.fill_data();
 			
 			
 

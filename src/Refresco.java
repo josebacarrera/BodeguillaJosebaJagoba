@@ -54,8 +54,11 @@ public class Refresco extends Articulo{
 		this.Azucar = Azucar;
 	}
 	
+	//METODOS
+	/*	void verCaracteristicas()
+		boolean saludable()
+		//tener menos de 25 de azucar
 	
 	
-	
-	
+	*/
 }

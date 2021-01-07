@@ -53,8 +53,13 @@ public class Vino extends Articulo {
 	public void setUva(String Uva) {
 		this.Uva = Uva;
 	}
-	
+	/*
+	//METODOS
+		void verCaracteristicas()
+		boolean saludable()
+		//tener origen rioja
 
-	
+
+	*/
 }
 
