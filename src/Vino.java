@@ -2,10 +2,10 @@ import java.util.*;
 import java.io.*;
 public class Vino extends Articulo {
 	//ATRIBUTOS
-	String Color;
-	String Origen;
-	int Anio;
-	String Uva;
+	private String Color;
+	private String Origen;
+	private int Anio;
+	private String Uva;
 
 	//CONSTRUCTORES
 	public Vino() {

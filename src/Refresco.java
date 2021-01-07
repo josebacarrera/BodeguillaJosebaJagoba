@@ -2,10 +2,10 @@ import java.util.*;
 import java.io.*;
 public class Refresco extends Articulo{
 	//ATRIBUTOS
-	String Sabor;
-	boolean Zumo;
-	boolean Gas;
-	int Azucar;
+	private String Sabor;
+	private boolean Zumo;
+	private boolean Gas;
+	private int Azucar;
 
 	//CONSTRUCTORES
 	public Refresco() {
