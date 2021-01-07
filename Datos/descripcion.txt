@@ -1,0 +1,6 @@
+Refrescos
+Codigo::Nombre::Marca::Precio::stock::sabor::zumo::gas::azucar
+Vinos
+Codigo::Nombre::Marca::Precio::stock::Color::Origen::Año::Uva
+Garagardoentzako
+Codigo::Nombre::Marca::Precio::stock::Origen::Cereales::Alcohol
