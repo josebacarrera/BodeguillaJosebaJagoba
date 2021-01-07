@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-public class Cerveza extends Bodeguilla {
+public class Cerveza extends Articulo {
 	//ATRIBUTOS
 	String Origen;
 	String[] Cereales;

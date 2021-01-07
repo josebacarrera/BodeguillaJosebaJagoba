@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-public class Refresco extends Bodeguilla{
+public class Refresco extends Articulo{
 	//ATRIBUTOS
 	String Sabor;
 	boolean Zumo;

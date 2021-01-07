@@ -11,7 +11,7 @@ public class Main {
 
 			
 			// crear una lista 
-			BodeguillaList bodeguilla = new BodeguillaList();
+			ListaArticulos bodeguilla = new ListaArticulos();
 			
 			
 			bodeguilla.fill_data();

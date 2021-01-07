@@ -1,26 +1,24 @@
-public class Bodeguilla {
+public class Articulo {
 	//ATRIBUTOS
 	String Codigo;
 	String Nombre;
 	String Marca;
 	double Precio;
-	int UnidCaja;
 	int Stock;
 
 	
 	//CONSTRUCTORES
-	public Bodeguilla() {
+	public Articulo() {
 		super();
 	}
 
 
-	public Bodeguilla(String Codigo, String Nombre, String Marca, double Precio, int UnidCaja, int Stock) {
+	public Articulo(String Codigo, String Nombre, String Marca, double Precio, int UnidCaja, int Stock) {
 		super();
 		this.Codigo = Codigo;
 		this.Nombre = Nombre;
 		this.Marca = Marca;
 		this.Precio = Precio;
-		this.UnidCaja = UnidCaja;
 		this.Stock = Stock;
 	}
 
@@ -64,16 +62,6 @@ public class Bodeguilla {
 
 	public void setPrecio(double Precio) {
 		this.Precio = Precio;
-	}
-
-
-	public int getUnidCaja() {
-		return UnidCaja;
-	}
-
-
-	public void setUnidCaja(int UnidCaja) {
-		this.UnidCaja = UnidCaja;
 	}
 
 
