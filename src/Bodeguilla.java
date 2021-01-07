@@ -1,11 +1,11 @@
 public class Bodeguilla {
 	//ATRIBUTOS
-	String codigo;
-	String nombre;
-	String marca;
-	double precio;
-	int unidCaja;
-	int stock;
+	String Codigo;
+	String Nombre;
+	String Marca;
+	double Precio;
+	int UnidCaja;
+	int Stock;
 
 	
 	//CONSTRUCTORES
@@ -14,76 +14,76 @@ public class Bodeguilla {
 	}
 
 
-	public Bodeguilla(String codigo, String nombre, String marca, double precio, int unidCaja, int stock) {
+	public Bodeguilla(String Codigo, String Nombre, String Marca, double Precio, int UnidCaja, int Stock) {
 		super();
-		this.codigo = codigo;
-		this.nombre = nombre;
-		this.marca = marca;
-		this.precio = precio;
-		this.unidCaja = unidCaja;
-		this.stock = stock;
+		this.Codigo = Codigo;
+		this.Nombre = Nombre;
+		this.Marca = Marca;
+		this.Precio = Precio;
+		this.UnidCaja = UnidCaja;
+		this.Stock = Stock;
 	}
 
 	
 	//GETTERS Y SETTERS
 
 	public String getCodigo() {
-		return codigo;
+		return Codigo;
 	}
 
 
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
+	public void setCodigo(String Codigo) {
+		this.Codigo = Codigo;
 	}
 
 
 	public String getNombre() {
-		return nombre;
+		return Nombre;
 	}
 
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNombre(String Nombre) {
+		this.Nombre = Nombre;
 	}
 
 
 	public String getMarca() {
-		return marca;
+		return Marca;
 	}
 
 
-	public void setMarca(String marca) {
-		this.marca = marca;
+	public void setMarca(String Marca) {
+		this.Marca = Marca;
 	}
 
 
 	public double getPrecio() {
-		return precio;
+		return Precio;
 	}
 
 
-	public void setPrecio(double precio) {
-		this.precio = precio;
+	public void setPrecio(double Precio) {
+		this.Precio = Precio;
 	}
 
 
 	public int getUnidCaja() {
-		return unidCaja;
+		return UnidCaja;
 	}
 
 
-	public void setUnidCaja(int unidCaja) {
-		this.unidCaja = unidCaja;
+	public void setUnidCaja(int UnidCaja) {
+		this.UnidCaja = UnidCaja;
 	}
 
 
 	public int getStock() {
-		return stock;
+		return Stock;
 	}
 
 
 	public void setStock(int stock) {
-		this.stock = stock;
+		this.Stock = Stock;
 	}
 	
 	

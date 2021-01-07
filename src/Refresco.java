@@ -1,57 +1,57 @@
+import java.util.*;
+import java.io.*;
 public class Refresco extends Bodeguilla{
 	//ATRIBUTOS
-	String sabor;
-	boolean zumo;
-	boolean gas;
-	int azucar;
-
-
+	String Sabor;
+	boolean Zumo;
+	boolean Gas;
+	int Azucar;
 
 	//CONSTRUCTORES
 	public Refresco() {
 		super();
 	}
 
-	public Refresco(String sabor, boolean zumo, boolean gas, int azucar) {
+	public Refresco(String Sabor, boolean Zumo, boolean Gas, int Azucar) {
 		super();
-		this.sabor = sabor;
-		this.zumo = zumo;
-		this.gas = gas;
-		this.azucar = azucar;
+		this.Sabor = Sabor;
+		this.Zumo = Zumo;
+		this.Gas = Gas;
+		this.Azucar = Azucar;
 	}
 	
 	//GETTERS Y SETTERS
 
 	public String getSabor() {
-		return sabor;
+		return Sabor;
 	}
 
-	public void setSabor(String sabor) {
-		this.sabor = sabor;
+	public void setSabor(String Sabor) {
+		this.Sabor = Sabor;
 	}
 
 	public boolean isZumo() {
-		return zumo;
+		return Zumo;
 	}
 
-	public void setZumo(boolean zumo) {
-		this.zumo = zumo;
+	public void setZumo(boolean Zumo) {
+		this.Zumo = Zumo;
 	}
 
 	public boolean isGas() {
-		return gas;
+		return Gas;
 	}
 
-	public void setGas(boolean gas) {
-		this.gas = gas;
+	public void setGas(boolean Gas) {
+		this.Gas = Gas;
 	}
 
 	public int getAzucar() {
-		return azucar;
+		return Azucar;
 	}
 
-	public void setAzucar(int azucar) {
-		this.azucar = azucar;
+	public void setAzucar(int Azucar) {
+		this.Azucar = Azucar;
 	}
 	
 	

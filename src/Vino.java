@@ -1,55 +1,57 @@
+import java.util.*;
+import java.io.*;
 public class Vino extends Bodeguilla {
 	//ATRIBUTOS
-	String color;
-	String origen;
-	int anio;
-	String uva;
+	String Color;
+	String Origen;
+	int Anio;
+	String Uva;
 
 	//CONSTRUCTORES
 	public Vino() {
 		super();
 	}
 
-	public Vino(String color, String origen, int anio, String uva) {
+	public Vino(String Color, String Origen, int Anio, String Uva) {
 		super();
-		this.color = color;
-		this.origen = origen;
-		this.anio = anio;
-		this.uva = uva;
+		this.Color = Color;
+		this.Origen = Origen;
+		this.Anio = Anio;
+		this.Uva = Uva;
 	}
 
 	//GETTERS Y SETTERS
 	
 	public String getColor() {
-		return color;
+		return Color;
 	}
 
-	public void setColor(String color) {
-		this.color = color;
+	public void setColor(String Color) {
+		this.Color = Color;
 	}
 
 	public String getOrigen() {
-		return origen;
+		return Origen;
 	}
 
-	public void setOrigen(String origen) {
-		this.origen = origen;
+	public void setOrigen(String Origen) {
+		this.Origen = Origen;
 	}
 
 	public int getAnio() {
-		return anio;
+		return Anio;
 	}
 
-	public void setAnio(int anio) {
-		this.anio = anio;
+	public void setAnio(int Anio) {
+		this.Anio = Anio;
 	}
 
 	public String getUva() {
-		return uva;
+		return Uva;
 	}
 
-	public void setUva(String uva) {
-		this.uva = uva;
+	public void setUva(String Uva) {
+		this.Uva = Uva;
 	}
 	
 
