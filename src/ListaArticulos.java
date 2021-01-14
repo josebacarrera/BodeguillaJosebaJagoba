@@ -63,7 +63,6 @@ public class ListaArticulos {
 		
 	while (sc.hasNextLine()) {
 	
-	Articulo nuevo = new Articulo();
 	linea=sc.nextLine();
 	parteslinea = linea.split("::");
 	
@@ -130,7 +129,7 @@ public class ListaArticulos {
 	public void ListarDatos() {
 		
 		for(int i = 0;i<ListaArticulos.size();i++) {
-			ListaArticulos.get(i).mostrardatos();
+			ListaArticulos.get(i).mostrarDatos();
 		}
 		
 	}
@@ -152,13 +151,14 @@ public class ListaArticulos {
 	public void ProductoSaludable() {
 		for(int i=0;i<ListaArticulos.size();i++) {
 			if(ListaArticulos.get(i).getCodigo().startsWith("FRES")) {
-				ListaArticulos.get(i).mostrardatos();
+				ListaArticulos.get(i).saludable();
+				ListaArticulos.get(i).mostrarDatos();
 			}
 			if(ListaArticulos.get(i).getCodigo().startsWith("WINE")) {
-				ListaArticulos.get(i).mostrardatos();
+				ListaArticulos.get(i).mostrarDatos();
 			}
 			if(ListaArticulos.get(i).getCodigo().startsWith("BEER")) {
-				ListaArticulos.get(i).mostrardatos();
+				ListaArticulos.get(i).mostrarDatos();
 			}
 		}
 	}
@@ -167,7 +167,7 @@ public class ListaArticulos {
 		int mostrar=0;
 		for(int i=0;i<ListaArticulos.size();i++) {
 			if(ListaArticulos.get(i).getStock()<50) {
-				ListaArticulos.get(i).mostrardatos();
+				ListaArticulos.get(i).mostrarDatos();
 			}	
 		}	
 	}

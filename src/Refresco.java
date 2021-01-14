@@ -52,7 +52,7 @@ public class Refresco extends Articulo {
 		this.Azucar = Azucar;
 	}
 
-	public void mostrardatos() {
+	public void mostrarDatos() {
 		int i;
 		System.out.println(this.Codigo + "-"+ this.Nombre + "-"+ this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Sabor + "-"+ this.Zumo + "-"+ this.Gas + "-"+ this.Azucar);
 		
@@ -63,7 +63,7 @@ public class Refresco extends Articulo {
 	 * 
 	 * 
 	 */
-	public void Saludable() {
+	public void saludable() {
 		boolean sano=false;
 		if(getAzucar()<25) {
 			sano=true;

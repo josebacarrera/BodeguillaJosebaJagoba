@@ -50,28 +50,26 @@ public class Cerveza extends Articulo {
 		Alcohol = alcohol;
 	}
 	
-	public void mostrardatos() {
+	public void mostrarDatos() {
 		int i;
-		System.out.println(this.Codigo + "-" + this.Nombre + "-" + this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Origen + "-"+ this.Alcohol);
-		for(int j=0;j< this.Cereales.length;j++) {
-		System.out.println("Cereales--> " + this.Cereales[j]);
+		boolean salu=false;
+		String aux="(" +  Cereales[0];
+		for(int j=1;j< this.Cereales.length;j++) {
+			aux=aux + "," + Cereales[j];
 		}
+		
+		System.out.println(this.Codigo + "-" + this.Nombre + "-" + this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Origen + "-"+ this.Alcohol +"-" + aux + ")");
+		//System.out.println("Cereales--> " + this.Cereales[j]);
+		
+		
 		
 	}
 
-	//METODOS
-	/*
-	void VerCaracteristicas ()
-	boolean Saludable ()
-	// have origin belgium
-	void BebidaMuyAlcoholica()
-	//If  the alcohol is higher than 6, raise the price 5%
-
-	*/
-	public void Saludable() {
-		boolean sano=false;
+	public void saludable() {
 		if(getOrigen()=="Belgium") {
-			sano=true;
+			System.out.println();
 		}
 	}
+	
+	
 }

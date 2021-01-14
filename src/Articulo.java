@@ -1,4 +1,4 @@
-public class Articulo {
+public abstract class Articulo {
 	//ATRIBUTOS
 	protected String Codigo;
 	protected String Nombre;
@@ -21,6 +21,8 @@ public class Articulo {
 		this.Precio = Precio;
 		this.Stock = Stock;
 	}
+	
+	
 
 	//GETTERS Y SETTERS
 	
@@ -73,10 +75,11 @@ public class Articulo {
 		Stock = stock;
 	}
 
+	// METODOS ABSTRACTOS
 	
-	public void mostrardatos() {
-		int i;
-		System.out.println(this.Codigo + "-" +this.Nombre + "-"+ this.Marca + "-"+ this.Precio + "-"+ this.Stock);
-	}
+	public abstract void mostrarDatos();	
+	public abstract void saludable();
+		
+	
 	
 }
