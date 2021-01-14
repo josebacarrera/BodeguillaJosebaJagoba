@@ -7,7 +7,6 @@ public class Cerveza extends Articulo  {
 	private double Alcohol;
 	
 	//CONSTRUCTORES
-
 	public Cerveza(String Codigo, String Nombre, String Marca, double Precio, int Stock) {
 		super(Codigo, Nombre, Marca, Precio, Stock);
 		
@@ -22,10 +21,6 @@ public class Cerveza extends Articulo  {
 	}
 
 	//GETTERS Y SETTERS
-	
-	
-
-
 	public String getOrigen() {
 		return Origen;
 	}
@@ -59,10 +54,6 @@ public class Cerveza extends Articulo  {
 		}
 		
 		System.out.println(this.Codigo + "-" + this.Nombre + "-" + this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Origen + "-"+ this.Alcohol +"-" + aux + ")");
-		//System.out.println("Cereales--> " + this.Cereales[j]);
-		
-		
-		
 	}
 
 	public void saludable() {

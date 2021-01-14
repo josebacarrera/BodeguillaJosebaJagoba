@@ -9,7 +9,6 @@ public class Vino extends Articulo {
 	private String Uva;
 
 	// CONSTRUCTORES
-
 	public Vino(String Codigo, String Nombre, String Marca, double Precio, int Stock) {
 		super(Codigo, Nombre, Marca, Precio, Stock);
 
@@ -25,7 +24,6 @@ public class Vino extends Articulo {
 	}
 
 	// GETTERS Y SETTERS
-
 	public String getColor() {
 		return Color;
 	}
@@ -63,11 +61,7 @@ public class Vino extends Articulo {
 		System.out.println(this.Codigo + "-" + this.Nombre + "-"+ this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Color + "-"+ this.Origen + "-"+ this.Anio + "-"+ this.Uva);
 		
 	}
-	/*
-	 * //METODOS void verCaracteristicas() boolean saludable() //tener origen rioja
-	 * 
-	 * 
-	 */
+	
 	public void saludable() {
 		boolean sano=false;
 		if(getOrigen()=="Rioja") {
