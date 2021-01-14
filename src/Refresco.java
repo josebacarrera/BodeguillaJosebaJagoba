@@ -54,7 +54,7 @@ public class Refresco extends Articulo {
 
 	public void mostrardatos() {
 		int i;
-		System.out.println(this.Codigo + this.Nombre + this.Marca + this.Precio + this.Stock + this.Sabor + this.Zumo + this.Gas + this.Azucar);
+		System.out.println(this.Codigo + "-"+ this.Nombre + "-"+ this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Sabor + "-"+ this.Zumo + "-"+ this.Gas + "-"+ this.Azucar);
 		
 	}
 	// METODOS
@@ -63,7 +63,7 @@ public class Refresco extends Articulo {
 	 * 
 	 * 
 	 */
-	public void SaludableRefresco() {
+	public void Saludable() {
 		boolean sano=false;
 		if(getAzucar()<25) {
 			sano=true;

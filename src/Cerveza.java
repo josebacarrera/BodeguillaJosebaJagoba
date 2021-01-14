@@ -52,9 +52,9 @@ public class Cerveza extends Articulo {
 	
 	public void mostrardatos() {
 		int i;
-		System.out.println(this.Codigo + this.Nombre + this.Marca + this.Precio + this.Stock + this.Origen + this.Alcohol);
+		System.out.println(this.Codigo + "-" + this.Nombre + "-" + this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Origen + "-"+ this.Alcohol);
 		for(int j=0;j< this.Cereales.length;j++) {
-		System.out.println("Cereales--> " + this.Cereales);
+		System.out.println("Cereales--> " + this.Cereales[j]);
 		}
 		
 	}
@@ -68,7 +68,7 @@ public class Cerveza extends Articulo {
 	//If  the alcohol is higher than 6, raise the price 5%
 
 	*/
-	public void SaludableCerveza() {
+	public void Saludable() {
 		boolean sano=false;
 		if(getOrigen()=="Belgium") {
 			sano=true;

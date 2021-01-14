@@ -44,7 +44,7 @@ public class Main {
 					break;
 
 				case 3:
-					articulo.Saludable();
+					articulo.ProductoSaludable();
 					break;
 					
 				case 4:
@@ -56,7 +56,7 @@ public class Main {
 					break;
 					
 				case 6:
-					
+					articulo.PocoStock();
 					break;
 
 				case 7:

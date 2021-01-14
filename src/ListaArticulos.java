@@ -149,24 +149,30 @@ public class ListaArticulos {
 		}
 	}
 	
-	public void Saludable() {
+	public void ProductoSaludable() {
 		for(int i=0;i<ListaArticulos.size();i++) {
 			if(ListaArticulos.get(i).getCodigo().startsWith("FRES")) {
-				for(int a = 0;a<ListaArticulos.size();a++) {
-					ListaArticulos.get(a).mostrardatos();
-				}
+				ListaArticulos.get(i).mostrardatos();
 			}
 			if(ListaArticulos.get(i).getCodigo().startsWith("WINE")) {
-				for(int w = 0;w<ListaArticulos.size();w++) {
-					ListaArticulos.get(w).mostrardatos();
-				}
+				ListaArticulos.get(i).mostrardatos();
 			}
 			if(ListaArticulos.get(i).getCodigo().startsWith("BEER")) {
-				for(int e = 0;e<ListaArticulos.size();e++) {
-					ListaArticulos.get(e).mostrardatos();
-				}
+				ListaArticulos.get(i).mostrardatos();
 			}
 		}
 	}
 	
+	public void PocoStock() {
+		int mostrar=0;
+		for(int i=0;i<ListaArticulos.size();i++) {
+			if(ListaArticulos.get(i).getStock()<50) {
+				ListaArticulos.get(i).mostrardatos();
+			}	
+		}	
+	}
+
+
 }
+	
+

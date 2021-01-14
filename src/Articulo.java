@@ -76,7 +76,7 @@ public class Articulo {
 	
 	public void mostrardatos() {
 		int i;
-		System.out.println(this.Codigo + this.Nombre + this.Marca + this.Precio + this.Stock);
+		System.out.println(this.Codigo + "-" +this.Nombre + "-"+ this.Marca + "-"+ this.Precio + "-"+ this.Stock);
 	}
 	
 }

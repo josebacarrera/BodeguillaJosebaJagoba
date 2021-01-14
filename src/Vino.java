@@ -60,7 +60,7 @@ public class Vino extends Articulo {
 	
 	public void mostrardatos() {
 		int i;
-		System.out.println(this.Codigo + this.Nombre + this.Marca + this.Precio + this.Stock + this.Color + this.Origen + this.Anio + this.Uva);
+		System.out.println(this.Codigo + "-" + this.Nombre + "-"+ this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Color + "-"+ this.Origen + "-"+ this.Anio + "-"+ this.Uva);
 		
 	}
 	/*
@@ -68,7 +68,7 @@ public class Vino extends Articulo {
 	 * 
 	 * 
 	 */
-	public void SaludableVino() {
+	public void Saludable() {
 		boolean sano=false;
 		if(getOrigen()=="Rioja") {
 			sano=true;
