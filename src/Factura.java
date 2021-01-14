@@ -73,8 +73,10 @@ public class Factura implements Facturacion {
 		System.out.println(this.total);
 	}
 
-	public void añadirLinea() {
-		
+	public void añadirLinea(String codigo, int cantidad, double totalLinea) {
+		Lineafactura nuevalinea=new Lineafactura(codigo, cantidad, totalLinea);
+		this.Lineas.add(nuevalinea);
+		this.total=this.total+totalLinea;
 	}
 	
 	public double calculototal() {
