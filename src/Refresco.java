@@ -1,26 +1,24 @@
 import java.util.*;
 import java.io.*;
-public class Refresco extends Articulo{
-	//ATRIBUTOS
+
+public class Refresco extends Articulo {
+	// ATRIBUTOS
 	private String Sabor;
 	private boolean Zumo;
 	private boolean Gas;
 	private int Azucar;
 
-	//CONSTRUCTORES
-	public Refresco() {
-		super();
-	}
+	// CONSTRUCTORES
 
-	public Refresco(String Sabor, boolean Zumo, boolean Gas, int Azucar) {
-		super();
-		this.Sabor = Sabor;
-		this.Zumo = Zumo;
-		this.Gas = Gas;
-		this.Azucar = Azucar;
+	public Refresco(String Codigo, String Nombre, String Marca, double Precio, int Stock, String sabor,
+			boolean zumo, boolean gas, int azucar) {
+		super(Codigo, Nombre, Marca, Precio, Stock);
+		Sabor = sabor;
+		Zumo = zumo;
+		Gas = gas;
+		Azucar = azucar;
 	}
-	
-	//GETTERS Y SETTERS
+	// GETTERS Y SETTERS
 
 	public String getSabor() {
 		return Sabor;
@@ -53,12 +51,22 @@ public class Refresco extends Articulo{
 	public void setAzucar(int Azucar) {
 		this.Azucar = Azucar;
 	}
-	
-	//METODOS
-	/*	void verCaracteristicas()
-		boolean saludable()
-		//tener menos de 25 de azucar
-	
-	
-	*/
+
+	public void mostrardatos() {
+		int i;
+		System.out.println(this.Codigo + this.Nombre + this.Marca + this.Precio + this.Stock + this.Sabor + this.Zumo + this.Gas + this.Azucar);
+		
+	}
+	// METODOS
+	/*
+	 * void verCaracteristicas() boolean saludable() //tener menos de 25 de azucar
+	 * 
+	 * 
+	 */
+	public void SaludableRefresco() {
+		boolean sano=false;
+		if(getAzucar()<25) {
+			sano=true;
+	}
+}
 }

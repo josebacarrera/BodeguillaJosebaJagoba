@@ -40,11 +40,11 @@ public class Main {
 					break;
 
 				case 2:
-					
+					articulo.ListarDatos();
 					break;
 
 				case 3:
-					
+					articulo.Saludable();
 					break;
 					
 				case 4:
@@ -52,7 +52,7 @@ public class Main {
 					break;
 					
 				case 5:
-					
+					articulo.Mascaro();
 					break;
 					
 				case 6:

@@ -4,22 +4,28 @@ public class Cerveza extends Articulo {
 	//ATRIBUTOS
 	private String Origen;
 	private String[] Cereales;
-	private int Alcohol;
+	private double Alcohol;
 	
 	//CONSTRUCTORES
-	public Cerveza() {
-		super();
+
+	public Cerveza(String Codigo, String Nombre, String Marca, double Precio, int Stock) {
+		super(Codigo, Nombre, Marca, Precio, Stock);
+		
 	}
 
-	public Cerveza(String origin, String[] cereals, int alcohol) {
-		super();
+	public Cerveza(String Codigo, String Nombre, String Marca, double Precio, int Stock,String Origen, String[] Cereales,double Alcohol) {
+		super(Codigo, Nombre, Marca, Precio, Stock);
 		this.Origen = Origen;
-		this.Cereales = Cereales;
+		this.Cereales = new String[3];
+		this.Cereales=Cereales;
 		this.Alcohol = Alcohol;
 	}
 
 	//GETTERS Y SETTERS
 	
+	
+
+
 	public String getOrigen() {
 		return Origen;
 	}
@@ -36,14 +42,22 @@ public class Cerveza extends Articulo {
 		Cereales = cereales;
 	}
 
-	public int getAlcohol() {
+	public double getAlcohol() {
 		return Alcohol;
 	}
 
-	public void setAlcohol(int alcohol) {
+	public void setAlcohol(double alcohol) {
 		Alcohol = alcohol;
 	}
 	
+	public void mostrardatos() {
+		int i;
+		System.out.println(this.Codigo + this.Nombre + this.Marca + this.Precio + this.Stock + this.Origen + this.Alcohol);
+		for(int j=0;j< this.Cereales.length;j++) {
+		System.out.println("Cereales--> " + this.Cereales);
+		}
+		
+	}
 
 	//METODOS
 	/*
@@ -54,4 +68,10 @@ public class Cerveza extends Articulo {
 	//If  the alcohol is higher than 6, raise the price 5%
 
 	*/
+	public void SaludableCerveza() {
+		boolean sano=false;
+		if(getOrigen()=="Belgium") {
+			sano=true;
+		}
+	}
 }

@@ -1,10 +1,10 @@
 public class Articulo {
 	//ATRIBUTOS
-	private String Codigo;
-	private String Nombre;
-	private String Marca;
-	private double Precio;
-	private int Stock;
+	protected String Codigo;
+	protected String Nombre;
+	protected String Marca;
+	protected double Precio;
+	protected int Stock;
 
 	
 	//CONSTRUCTORES
@@ -13,7 +13,7 @@ public class Articulo {
 	}
 
 
-	public Articulo(String Codigo, String Nombre, String Marca, double Precio, int UnidCaja, int Stock) {
+	public Articulo(String Codigo, String Nombre, String Marca, double Precio, int Stock) {
 		super();
 		this.Codigo = Codigo;
 		this.Nombre = Nombre;
@@ -74,6 +74,9 @@ public class Articulo {
 	}
 
 	
-	
+	public void mostrardatos() {
+		int i;
+		System.out.println(this.Codigo + this.Nombre + this.Marca + this.Precio + this.Stock);
+	}
 	
 }

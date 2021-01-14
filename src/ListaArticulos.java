@@ -2,12 +2,12 @@ import java.util.*;
 import java.io.*;
 public class ListaArticulos {
 
-	private ArrayList<Articulo> ListaArticulos;
+	private ArrayList<Articulo> ListaArticulos=new ArrayList<Articulo>();
 
 	//CONSTRUCTORES
 	public ListaArticulos() {
 		super();
-		ListaArticulos = ListaArticulos;
+		
 	}
 
 	public ListaArticulos(ArrayList<Articulo> ListaArticulos) {
@@ -33,51 +33,83 @@ public class ListaArticulos {
 		
 		int i=0;
 		
+		String Codigo;
+		String Nombre;
+		String Marca;
+		double Precio;
+		int Stock;
+		
+		// Atributos
+		
+		
+		// Atributos refrescos
+		
+		String Sabor;
+		Boolean Zumo,Gas;
+		int Azucar;
+		
+		// Atributos Vino
+		
+		String Color;
+		String OrigenVino;
+		int Anio;
+		String Uva;
+		
+		// Atributos Cerveza
+		 
+		String OrigenCerveza;
+		String[] Cereales;
+		int Alcohol;
+		
 	while (sc.hasNextLine()) {
 	
+	Articulo nuevo = new Articulo();
 	linea=sc.nextLine();
 	parteslinea = linea.split("::");
 	
-	Articulo nuevo = new Articulo();
-	nuevo.setCodigo(parteslinea[0]);
-	nuevo.setNombre(parteslinea[1]);
-	nuevo.setMarca(parteslinea[2]);
-	nuevo.setPrecio(Double.parseDouble(parteslinea[3]));
-	nuevo.setStock(Integer.parseInt(parteslinea[4]));
-	//this.ListaArticulos.add(nuevo);
+	Codigo=parteslinea[0];
+	Nombre=parteslinea[1];
+	Marca=parteslinea[2];
+	Precio=Double.parseDouble((parteslinea[3]).replace(",","."));
+	Stock= Integer.parseInt(parteslinea[4]);
 	
-	if (ListaArticulos.startswith("REFR")) {
-		nuevo.setSabor(parteslinea[5]);
-		nuevo.setZumo(Boolean.parseBoolean(parteslinea[6]));
-		nuevo.setGas(Boolean.parseBoolean(parteslinea[7]));
-		nuevo.setAzucar(Integer.parseInt(parteslinea[8]));
-		ListaArticulos.add(nuevo);
+	
+		
+ 	if (Codigo.startsWith("FRES")) {
+ 		
+ 		Sabor=parteslinea[5];
+ 		Zumo=Boolean.parseBoolean(parteslinea[6]);
+ 		Gas=Boolean.parseBoolean(parteslinea[7]);
+ 		Azucar=Integer.parseInt(parteslinea[8]);
+ 		Refresco r=new Refresco(Codigo, Nombre, Marca,Precio,Stock,Sabor,Zumo,Gas,Azucar);
+ 		
+		ListaArticulos.add(r);
 	}
 	
-	if (ListaArticulos.startswith("VINO")) {
-		nuevo.setColor(parteslinea[9]);
-		nuevo.setOrigen(parteslinea[10]);
-		nuevo.setAnio(Integer.parseInt(parteslinea[11]));
-		nuevo.setUva(parteslinea[12]);
-		ListaArticulos.add(nuevo);
+ 	else if (Codigo.startsWith("WINE")) {
+		
+		Color=(parteslinea[5]);
+		OrigenVino=(parteslinea[6]);
+		Anio=(Integer.parseInt(parteslinea[7]));
+		Uva=(parteslinea[8]);
+		Vino v=new Vino(Codigo,Nombre,Marca,Precio,Stock,Color,OrigenVino,Anio,Uva);
+		ListaArticulos.add(v);
 	}
 	
-	if (ListaArticulos.startswith("CERV")) {
-		nuevo.setOrigen(parteslinea[13]);
+ 	else if (Codigo.startsWith("BEER")) {
+	
+		OrigenCerveza=parteslinea[5];
 		String aux[] = new String[3];
-		aux[0]=parteslinea[14];
-		aux[1]=parteslinea[15];
-		aux[3]=parteslinea[16];
-		nuevo.setCereales(parteslinea[17]);
-		nuevo.setAlcohol(Integer.parseInt(parteslinea[18]));
-		ListaArticulos.add(nuevo);
+		aux[0]=parteslinea[6];
+		aux[1]=parteslinea[7];
+		aux[2]=parteslinea[8];
+		Cereales=(aux);
+		Alcohol=(int) Double.parseDouble(parteslinea[9]);
+		Cerveza c=new Cerveza(Codigo,Nombre,Marca,Precio,Stock,OrigenCerveza, Cereales, Alcohol);
+		ListaArticulos.add(c);
 	}
 	
 	
-		}
-	}
-	
-
 	
 	//METODOS
 	
@@ -91,4 +123,50 @@ public class ListaArticulos {
     */
 		
 	//}	
+		}
+	
+	}
+	
+	public void ListarDatos() {
+		
+		for(int i = 0;i<ListaArticulos.size();i++) {
+			ListaArticulos.get(i).mostrardatos();
+		}
+		
+	}
+	
+	public void Mascaro() {
+		double max=0;
+		for(int i=0;i<ListaArticulos.size();i++) {
+			if(max<ListaArticulos.get(i).getPrecio()) {
+				max=ListaArticulos.get(i).getPrecio();
+			}
+		}
+		for(int i=0;i<ListaArticulos.size();i++) {
+			if(ListaArticulos.get(i).getPrecio()==max) {
+				System.out.println("El producto mas caro es: " + ListaArticulos.get(i).getNombre());
+			}
+		}
+	}
+	
+	public void Saludable() {
+		for(int i=0;i<ListaArticulos.size();i++) {
+			if(ListaArticulos.get(i).getCodigo().startsWith("FRES")) {
+				for(int a = 0;a<ListaArticulos.size();a++) {
+					ListaArticulos.get(a).mostrardatos();
+				}
+			}
+			if(ListaArticulos.get(i).getCodigo().startsWith("WINE")) {
+				for(int w = 0;w<ListaArticulos.size();w++) {
+					ListaArticulos.get(w).mostrardatos();
+				}
+			}
+			if(ListaArticulos.get(i).getCodigo().startsWith("BEER")) {
+				for(int e = 0;e<ListaArticulos.size();e++) {
+					ListaArticulos.get(e).mostrardatos();
+				}
+			}
+		}
+	}
+	
 }

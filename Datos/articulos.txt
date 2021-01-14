@@ -5,6 +5,6 @@ FRES04::Naranjin::Don Simon::0.5::115::Naranja::true::false::40
 WINE01::Familia 202::CVNE::6.7::127::Beltza::Rioja::2014::Tempranillo
 WINE02::Cepas::Enate::3.7::23::Txuria::Somontano::2016::Chardonnay
 WINE03::Pink::GC::3.7::390::Gorria::La mancha::2016::Garnacha
-BEER01::Heineken Gold::Heineken::1.5::111::Belgium::barley,rye,wheat::8.0
-BEER02::San Miguel 0.0::San Miguel::0.5::70::Spain::barley,rye::0.0
+BEER01::Heineken Gold::Heineken::1.5::111::Belgium::barley::rye::wheat::8.0
+BEER02::San Miguel 0.0::San Miguel::0.5::70::Spain::barley::rye::a::0.0
 FRES05::COCA COLA::coca cola cmp::0.75::100::kola::false::true::30
