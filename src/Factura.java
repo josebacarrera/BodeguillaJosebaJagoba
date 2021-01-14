@@ -63,13 +63,22 @@ public class Factura implements Facturacion {
 	
 	// METODOS
 	public void print() {
-		
-		
+		System.out.println(this.numero);
+		System.out.println(this.nombre);
+		System.out.println(this.apellido);
+		System.out.println("codigo  --  cantidad  --  total");
+		for(int i=0;i<Lineas.size();i++) {
+			System.out.println(this.Lineas.get(i).getCodigo()+ "-" + this.Lineas.get(i).getCantidad() + "-" + this.Lineas.get(i).getTotalLinea());
+		}
+		System.out.println(this.total);
 	}
 
-	public double calculototal() {
+	public void añadirLinea() {
 		
-		return 0;
+	}
+	
+	public double calculototal() {
+		return this.total+(this.total*Facturacion.iva);
 	}
 	
 }
