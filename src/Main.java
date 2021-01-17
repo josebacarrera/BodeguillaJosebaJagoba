@@ -68,7 +68,7 @@ public class Main {
 						}
 							
 						fact.print();
-						*/
+						
 					
 					int numero;
 					String nombre,apellido,dato;
@@ -90,7 +90,7 @@ public class Main {
 						if(dato.equalsIgnoreCase(anotherString)) {
 							
 						}
-					}
+					}*/
 					
 					
 					break;
