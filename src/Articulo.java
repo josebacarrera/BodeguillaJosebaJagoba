@@ -76,7 +76,6 @@ public abstract class Articulo {
 	}
 
 	// METODOS ABSTRACTOS
-	
 	public abstract void mostrarDatos();	
 	public abstract void saludable();
 		

@@ -63,9 +63,8 @@ public class Vino extends Articulo {
 	}
 	
 	public void saludable() {
-		boolean sano=false;
-		if(getOrigen()=="Rioja") {
-			sano=true;
+		if(getOrigen().contains("Rioja")) {
+			System.out.println(this.Codigo + "-" + this.Nombre + "-"+ this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Color + "-"+ this.Origen + "-"+ this.Anio + "-"+ this.Uva);
+		}
 	}
-}
 }

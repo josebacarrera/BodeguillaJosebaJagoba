@@ -52,15 +52,19 @@ public class Cerveza extends Articulo  {
 		for(int j=1;j< this.Cereales.length;j++) {
 			aux=aux + "," + Cereales[j];
 		}
-		
 		System.out.println(this.Codigo + "-" + this.Nombre + "-" + this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Origen + "-"+ this.Alcohol +"-" + aux + ")");
 	}
 
 	public void saludable() {
-		if(getOrigen()=="Belgium") {
-			System.out.println();
+		if(getOrigen().contains("Belgium")) {
+			String aux="(" +  Cereales[0];
+			for(int j=1;j< this.Cereales.length;j++) {
+				aux=aux + "," + Cereales[j];
+			}
+			System.out.println(this.Codigo + "-" + this.Nombre + "-" + this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Origen + "-"+ this.Alcohol +"-" + aux + ")");
 		}
 	}
 	
 	
 }
+

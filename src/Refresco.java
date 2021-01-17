@@ -62,6 +62,7 @@ public class Refresco extends Articulo {
 		boolean sano=false;
 		if(getAzucar()<25) {
 			sano=true;
+			System.out.println(this.Codigo + "-"+ this.Nombre + "-"+ this.Marca + "-"+ this.Precio + "-"+ this.Stock + "-"+ this.Sabor + "-"+ this.Zumo + "-"+ this.Gas + "-"+ this.Azucar);
+		}
 	}
-}
 }

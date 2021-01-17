@@ -107,27 +107,13 @@ public class ListaArticulos {
 		Cerveza c=new Cerveza(Codigo,Nombre,Marca,Precio,Stock,OrigenCerveza, Cereales, Alcohol);
 		ListaArticulos.add(c);
 	}
+	}
+	}
 	
 	
 	
 	//METODOS
-	
-	/*String[] Reponer()
-	// devuelve un array de los codigos de articulos que hay que reponer (stock<50).
-	Articulo masCaro()
-	//devuelve el articulo mas caro
-	double precio(String codigo)
-	// //dado un codigo, devuelve su precio
-
-    */
-		
-	//}	
-		}
-	
-	}
-	
 	public void ListarDatos() {
-		
 		for(int i = 0;i<ListaArticulos.size();i++) {
 			ListaArticulos.get(i).mostrarDatos();
 		}
@@ -152,15 +138,15 @@ public class ListaArticulos {
 		for(int i=0;i<ListaArticulos.size();i++) {
 			if(ListaArticulos.get(i).getCodigo().startsWith("FRES")) {
 				ListaArticulos.get(i).saludable();
-				ListaArticulos.get(i).mostrarDatos();
 			}
 			if(ListaArticulos.get(i).getCodigo().startsWith("WINE")) {
-				ListaArticulos.get(i).mostrarDatos();
+				ListaArticulos.get(i).saludable();
 			}
 			if(ListaArticulos.get(i).getCodigo().startsWith("BEER")) {
-				ListaArticulos.get(i).mostrarDatos();
+				ListaArticulos.get(i).saludable();
 			}
 		}
+		
 	}
 	
 	public void PocoStock() {
@@ -170,6 +156,26 @@ public class ListaArticulos {
 				ListaArticulos.get(i).mostrarDatos();
 			}	
 		}	
+	}
+	
+	public void precioEquivalente() {
+		String cod;
+		double equivalente=0;
+		System.out.println("Inserte un producto!");
+		Scanner sc=new Scanner(System.in);
+		cod=sc.nextLine();
+		for(int i=0;i<ListaArticulos.size();i++) {
+			if(ListaArticulos.get(i).getCodigo().contains(cod)) {
+				equivalente=ListaArticulos.get(i).getPrecio();
+			}
+		}
+		for(int w=0;w<ListaArticulos.size();w++) {
+			if(ListaArticulos.get(w).getPrecio()==equivalente) {
+				ListaArticulos.get(w).mostrarDatos();
+			}
+		}
+		
+		
 	}
 
 
