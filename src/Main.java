@@ -70,6 +70,29 @@ public class Main {
 						fact.print();
 						*/
 					
+					int numero;
+					String nombre,apellido,dato;
+					String[] datos;
+					
+					dato ="";
+					datos =null;
+					System.out.println("Numero de factura: ");
+					numero=Integer.parseInt(sc.nextLine());
+					System.out.println("Nombre: ");
+					nombre=sc.nextLine();
+					System.out.println("Apellido: ");
+					apellido=sc.nextLine();
+					Factura fact=new Factura(numero,nombre,apellido);
+					while(dato.equalsIgnoreCase("FIN")==false) {
+						System.out.println("Codigo del producto y cantida ");
+						System.out.println("si no desea nada mas escriba FIN");
+						dato = sc.nextLine().toUpperCase();
+						if(dato.equalsIgnoreCase(anotherString)) {
+							
+						}
+					}
+					
+					
 					break;
 
 				case 2:
