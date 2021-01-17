@@ -161,7 +161,7 @@ public class ListaArticulos {
 	public void precioEquivalente() {
 		String cod;
 		double equivalente=0;
-		System.out.println("Inserte un producto!!");
+		System.out.println("Inserte un producto!!!");
 		Scanner sc=new Scanner(System.in);
 		cod=sc.nextLine();
 		for(int i=0;i<ListaArticulos.size();i++) {
